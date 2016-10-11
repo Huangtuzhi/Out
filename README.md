@@ -10,9 +10,9 @@ Post an authorization request per 1.5 hours. If a verification code is required,
 |   |-- icon.png      //插件图标
 |   |-- main.css
 |   |-- manifest.json //插件配置
+|   |-- Out.crx       //可以直接安装的插件
 |   |-- popup.html    //点击插件的弹窗页面
 |   |-- popup.js
 |   `-- README.md
 ```
-
 ## Demo
