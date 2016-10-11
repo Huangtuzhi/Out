@@ -6,8 +6,8 @@ Post an authorization request per 1.5 hours. If a verification code is required,
 
 ```
 |-- Out
-|   |-- content.js //插件后台执行代码
-|   |-- icon.png   //插件图标
+|   |-- content.js    //插件后台执行代码
+|   |-- icon.png      //插件图标
 |   |-- main.css
 |   |-- manifest.json //插件配置
 |   |-- popup.html    //点击插件的弹窗页面
