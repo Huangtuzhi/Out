@@ -1,0 +1,32 @@
+body {
+    font-size: 100%;
+    min-height: 400px;
+    min-width: 300px;
+    font-size: 14px;
+    padding: 25px 20px;
+    padding: 0px;
+    margin: 0;
+    font-family: "Microsoft YaHei UI", sans-serif;
+}
+
+#container {
+}
+
+#time_displayer p{
+	text-align:center;
+	font-size: 20px;
+	color: #d45d5c;
+}
+
+#time_left {
+	margin-left: 69px;
+	margin-right: 69px;
+	text-align:center;
+	font-size: 18px;
+	border:#199 solid 1px;
+}
+
+#authcode_cracker {
+	padding-top: 30px;
+	margin-top: 30px;
+}
