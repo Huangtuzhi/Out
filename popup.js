@@ -30,12 +30,12 @@ function executeAjax() {
         }
     }
 
-    request.open('GET', 'http://auth-proxy.oa.com/DevNetTempVisit.aspx');
+    request.open('GET', 'http://XXXXXXXXXXXX/DevNetXXXXX.aspx');
     request.send();
 }
 
 function getLeftTime() {
-  //定期获取 OA 网站内容
+  //定期获取网站内容
   executeAjax();
   setInterval(executeAjax, 60000);
 }
