@@ -15,4 +15,4 @@ A Chrome Plugin to get access to public Internet within Devnet of Tencent.
 ```
 ## Demo
 
-![image](./demo.jpg)
+![image](./demo.JPG)
