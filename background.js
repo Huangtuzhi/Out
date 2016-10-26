@@ -1,3 +1,4 @@
+// 暂时不使用
 function $(id) {
   return document.querySelector(id);
 }
@@ -10,13 +11,13 @@ function success(text) {
 
     var hourStartPos = timeStr.indexOf("小时");
     var miniteStartPos = timeStr.indexOf("分钟");
-    if (hourStartPos == -1 && parseInt(timeStr.substring(miniteStartPos - 2, miniteStartPos)) < 5) {
+    console.log(parseInt(timeStr.substring(miniteStartPos - 2, miniteStartPos)));
+    if (hourStartPos == -1 && parseInt(timeStr.substring(miniteStartPos - 2, miniteStartPos)) < 49) {
         //请求下授权
         accessInternet(text);
+        console.log(parseInt(timeStr.substring(miniteStartPos - 2, miniteStartPos)));
     }
 }
-
-
 
 function fail(code) {
     var textpos = $("#time_left");
@@ -38,14 +39,13 @@ function executeAjax() {
         }
     }
 
-    request.open('GET', 'http://XXX/XXXVisit');
+    request.open('GET', 'http://auth-proxy.oa.com/DevNetTempVisit.aspx');
     request.send();
 }
 
 function getLeftTime() {
-  //定期获取网站内容
-  executeAjax();
-  setInterval(executeAjax, 1000);
+  //定期获取 OA 网站内容
+  // setInterval(executeAjax, 50000);
 }
 
 function accessInternet(text) {
@@ -58,4 +58,4 @@ function init() {
   getLeftTime();
 }
 
-init();
+// init();

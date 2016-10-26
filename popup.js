@@ -8,6 +8,12 @@ function success(text) {
     var endPos = text.indexOf("分钟");
     var timeStr = text.substring(startPos + 31, endPos + 5);
     textpos.innerHTML = timeStr;
+
+    var hourStartPos = timeStr.indexOf("小时");
+    var miniteStartPos = timeStr.indexOf("分钟");
+    if (hourStartPos == -1 && parseInt(timeStr.substring(miniteStartPos - 2, miniteStartPos)) < 10) {
+        alert("Add a second");
+    }
 }
 
 function fail(code) {
@@ -30,14 +36,14 @@ function executeAjax() {
         }
     }
 
-    request.open('GET', 'http://auth-proxy.oa.com/DevNetTempVisit.aspx');
+    request.open('GET', 'OA 续时间网站网址');
     request.send();
 }
 
 function getLeftTime() {
-  //定期获取 OA 网站内容
+  //定期获取网站内容
   executeAjax();
-  setInterval(executeAjax, 60000);
+  // setInterval(executeAjax, 60000);
 }
 
 function init() {
