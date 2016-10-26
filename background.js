@@ -39,7 +39,7 @@ function executeAjax() {
         }
     }
 
-    request.open('GET', 'http://auth-proxy.oa.com/DevNetTempVisit.aspx');
+    request.open('GET', ''OA 续时间网站网址');
     request.send();
 }
 
