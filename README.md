@@ -16,3 +16,5 @@ A Chrome Plugin to get access to public Internet within Devnet of Tencent.
 ## Demo
 
 ![image](./demo.png)
+
+具体细节参见 [写一个 Chrome 插件解决生活问题](http://fuzhii.com/2016/10/08/write-chrome-plugin/)
